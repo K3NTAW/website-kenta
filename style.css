@@ -5,6 +5,14 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #bcbcbc;
 }
+ .col-menu {
+  border-radius: 5px;
+  background: #262426;
+  padding: 20px;
+}
+a.hover {
+  color: #6c388c;
+}
 @media screen {
   
   .menu-content {
