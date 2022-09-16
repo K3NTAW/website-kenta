@@ -5,48 +5,52 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #bcbcbc;
 }
+@media screen {
+  
+  .menu-content {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      padding: 0 0 0 30px;
+  }
+  .col-menu {
+      background-color: #262426;
+      padding: 0px 15px;
+      border-bottom: 3px solid #bcbcbc;
+      box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+  }
+  .col-menu ul {
+      list-style-type: none;
+      padding: 0;
+  }
+  .col-menu a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+  }
+  .col-menu label {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 25px;
+      display: block;
+      cursor: pointer;
+      background: url(menu-button.png) no-repeat left center;
+      padding: 10px 0 10px 50px;
+  }
+  input#menu {
+    display: none;
+  }
 
-.menu-content {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 0 0 0 30px;
+  input:checked +label {
+      background-image: url(close-button.png);
+  }
+  .menu-content {
+      max-height: 0;
+      overflow: hidden;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      padding: 0 0 0 30px;
+  }
+  input:checked ~ label {
+      background-image: url(close-button.png);
+  }
+  input:checked ~ .menu-content {
+      max-height: 100%;
+  }
 }
-.col-menu {
-    background-color: #262426;
-    padding: 0px 15px;
-    border-bottom: 3px solid #bcbcbc;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
-}
-.col-menu ul {
-    list-style-type: none;
-    padding: 0;
-}
-.col-menu a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-}
-.col-menu label {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
-    display: block;
-    cursor: pointer;
-    background: url(menu-button.png) no-repeat left center;
-    padding: 10px 0 10px 50px;
-}
-
-input:checked +label {
-    background-image: url(close-button.png);
-}
-.menu-content {
-    max-height: 0;
-    overflow: hidden;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 0 0 0 30px;
-}
-input:checked ~ label {
-    background-image: url(close-button.png);
-}
-input:checked ~ .menu-content {
-    max-height: 100%;
-}
-
