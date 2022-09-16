@@ -37,7 +37,6 @@ body {
   input#menu {
     display: none;
   }
-
   input:checked +label {
       background-image: url(close-button.png);
   }
